@@ -62,11 +62,11 @@
   <br>
 
   <!-- Buttons -->
-  <button onclick="saySorry()">I’m Really Sorry 💯😭</button>
-  <button onclick="cuteMsg1()">Miss You So Much 💖🥺</button>
-  <button onclick="cuteMsg2()">I Love You 💓💞</button>
+  <button onclick="saySorry()">Sorry 💯😭</button>
+  <button onclick="cuteMsg1()">Miss You💖🥺</button>
+  <button onclick="cuteMsg2()">I💓You💞</button>
   <button onclick="cuteMsg3()">Please Don’t Be Angry 😭💗</button>
-  <button onclick="hug()">Send You a Big Hug 🫂💕</button>
+  <button onclick="hug()">Sending You a Big Hug 🫂💕</button>
 
   <!-- Output -->
   <div id="messages"></div>
@@ -75,30 +75,33 @@
     function saySorry() {
       let text = "";
       for (let i = 1; i <= 100; i++) {
-        text +=". I'm sorry 😭💔\n";
+        text +="I'm really sorry Avu ji😭💔\n";
       }
       document.getElementById("messages").innerText = text;
     }
 
     function cuteMsg1() {
       document.getElementById("messages").innerHTML =
-        "Main tumhe bahut miss kar rahi hoon… 🥺💖<br>Please baat kar lo na 😭💞";
+        "Main tumhe bahut miss kar rahi hoon… 🥺💖<br>Please baat kar lo na 😭💞"
+        + "<img src ='https://media.giphy.com/media/Y4z9olnoVl5QI/giphy.gif'>;
     }
 
     function cuteMsg2() {
       document.getElementById("messages").innerHTML =
-        "I really really 💓💞<br> Tum hi sab kuch ho 🥹💕";
+        "I really really 💓💞<br> Tum hi sab kuch ho 🥹💕"
+        + "<img src ='https://media.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif>;
     }
 
     function cuteMsg3() {
       document.getElementById("messages").innerHTML =
-        "Gussa mat ho na please 😭💗<br>Main pakka sudhar jaungi 🥺💞";
+        "Gussa mat ho na please 😭💗<br>Main pakka sudhar jaungi 🥺💞"
+        + "<img src ='https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif'>;
     }
 
     function hug() {
       document.getElementById("messages").innerHTML =
-        "<p>Yeh lo ek tight hug 🫂💕🥹</p>" +
-        "<img src='https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif'>";
+        "<p>Yeh lo ek tight hug mere pyara sa bachaa 🫂💕🥹</p>" +
+        "<img src='https://media.giphy.com/media/sUIZWMnfd4Mb6/giphy.gif'>";
     }
   </script>
 
