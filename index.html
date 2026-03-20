@@ -54,7 +54,7 @@
 <body>
 
   <h1>Sorry Baby 🥺💔</h1>
-  <p>Mujhse galti ho gayi… please gussa mat ho na 😭❤️</p>
+  <p>Mujhse galti ho gayi… please gussa mat ho na 🥹❤️</p>
 
   <!-- Cute GIF -->
   <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
@@ -63,9 +63,9 @@
 
   <!-- Buttons -->
   <button onclick="saySorry()">Sorry 💯😭</button>
-  <button onclick="cuteMsg1()">Miss You💖🥺</button>
-  <button onclick="cuteMsg2()">I💓You💞</button>
-  <button onclick="cuteMsg3()">Please Don’t Be Angry 😭💗</button>
+  <button onclick="cuteMsg1()">Miss You 💖🥺</button>
+  <button onclick="cuteMsg2()">I 💓 You 💞</button>
+  <button onclick="cuteMsg3()">Please Don’t Be Angry 🥺💗</button>
   <button onclick="hug()">Sending You a Big Hug 🫂💕</button>
 
   <!-- Output -->
@@ -75,27 +75,27 @@
     function saySorry() {
       let text = "";
       for (let i = 1; i <= 100; i++) {
-        text +="I'm really sorry Avu ji😭💔\n";
+        text += "I'm really sorry Avu ji 😭💔\n";
       }
       document.getElementById("messages").innerText = text;
     }
 
     function cuteMsg1() {
       document.getElementById("messages").innerHTML =
-        "Main tumhe bahut miss kar rahi hoon… 🥺💖<br>Please baat kar lo na 😭💞"
-        + "<img src ='https://media.giphy.com/media/Y4z9olnoVl5QI/giphy.gif'>;
+        "Main tumhe bahut miss kar rahi hoon… 🥺💖<br>Please baat kar lo na 😭💞" +
+        "<br><img src='https://media.giphy.com/media/Y4z9olnoVl5QI/giphy.gif'>";
     }
 
     function cuteMsg2() {
       document.getElementById("messages").innerHTML =
-        "I really really 💓💞<br> Tum hi sab kuch ho 🥹💕"
-        + "<img src ='https://media.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif>;
+        "I really really 💓💞<br>Tum hi sab kuch ho 🥹💕" +
+        "<br><img src='https://media.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif'>";
     }
 
     function cuteMsg3() {
       document.getElementById("messages").innerHTML =
-        "Gussa mat ho na please 😭💗<br>Main pakka sudhar jaungi 🥺💞"
-        + "<img src ='https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif'>;
+        "Gussa mat ho na please 🥺💗<br>Main pakka sudhar jaungi 🥺💞" +
+        "<br><img src='https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif'>";
     }
 
     function hug() {
