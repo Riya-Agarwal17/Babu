@@ -56,17 +56,17 @@
   <h1>Sorry Baby 🥺💔</h1>
   <p>Mujhse galti ho gayi… please gussa mat ho na 😭❤️</p>
 
-  <!-- Main GIF -->
+  <!-- Cute GIF -->
   <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
 
   <br>
 
   <!-- Buttons -->
-  <button onclick="saySorry()">Say Sorry 100 Times 💯</button>
-  <button onclick="cuteMsg1()">Miss You 💖</button>
-  <button onclick="cuteMsg2()">Love You ❤️</button>
-  <button onclick="cuteMsg3()">Please Talk 🥺</button>
-  <button onclick="hug()">Send Hug 🤗</button>
+  <button onclick="saySorry()">I’m Really Sorry 💯😭</button>
+  <button onclick="cuteMsg1()">Miss You So Much 💖🥺</button>
+  <button onclick="cuteMsg2()">I Love You 💓💞</button>
+  <button onclick="cuteMsg3()">Please Don’t Be Angry 😭💗</button>
+  <button onclick="hug()">Send You a Big Hug 🫂💕</button>
 
   <!-- Output -->
   <div id="messages"></div>
@@ -75,29 +75,29 @@
     function saySorry() {
       let text = "";
       for (let i = 1; i <= 100; i++) {
-        text += i + ". Sorry 😔\n";
+        text += i + ". I'm sorry 😭💔\n";
       }
       document.getElementById("messages").innerText = text;
     }
 
     function cuteMsg1() {
       document.getElementById("messages").innerHTML =
-        "Main tumhe bahut miss kar rahi hoon… 🥺💖<br>Plz baat kar lo na 😭";
+        "Main tumhe bahut miss kar rahi hoon… 🥺💖<br>Please baat kar lo na 😭💞";
     }
 
     function cuteMsg2() {
       document.getElementById("messages").innerHTML =
-        "I really really love you ❤️<br>Tum bina sab adhura lagta hai 😔";
+        "I really really 💓💞<br> Tum hi sab kuch ho 🥹💕";
     }
 
     function cuteMsg3() {
       document.getElementById("messages").innerHTML =
-        "Gussa chhodo na 😭<br>Main pakka dobara aisi galti nahi karungi 💞";
+        "Gussa mat ho na please 😭💗<br>Main pakka sudhar jaungi 🥺💞";
     }
 
     function hug() {
       document.getElementById("messages").innerHTML =
-        "<p>Yeh lo ek tight hug 🤗💖</p>" +
+        "<p>Yeh lo ek tight hug 🫂💕🥹</p>" +
         "<img src='https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif'>";
     }
   </script>
