@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Sorry Baby 💔</title>
+
   <style>
     body {
       background: linear-gradient(to right, #ff9a9e, #fad0c4);
       text-align: center;
       font-family: Arial, sans-serif;
       color: #333;
+      padding: 20px;
     }
 
     h1 {
-      margin-top: 50px;
+      margin-top: 30px;
       font-size: 40px;
     }
 
@@ -20,19 +22,16 @@
       font-size: 20px;
     }
 
-    .cartoon {
-      margin-top: 30px;
-    }
-
     img {
       width: 200px;
       border-radius: 20px;
+      margin-top: 20px;
     }
 
     button {
-      margin-top: 30px;
-      padding: 15px 25px;
-      font-size: 18px;
+      margin: 10px;
+      padding: 12px 20px;
+      font-size: 16px;
       border: none;
       border-radius: 10px;
       background-color: #ff6b81;
@@ -43,25 +42,63 @@
     button:hover {
       background-color: #ff4757;
     }
+
+    #messages {
+      margin-top: 20px;
+      font-size: 18px;
+      white-space: pre-line;
+    }
   </style>
 </head>
+
 <body>
 
   <h1>Sorry Baby 🥺💔</h1>
   <p>Mujhse galti ho gayi… please gussa mat ho na 😭❤️</p>
 
-  <div class="cartoon">
-    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="cute cartoon sorry">
-  </div>
+  <!-- Main GIF -->
+  <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
 
-  <button onclick="showMessage()">Click karo na 😔</button>
+  <br>
 
-  <p id="extraMessage"></p>
+  <!-- Buttons -->
+  <button onclick="saySorry()">Say Sorry 100 Times 💯</button>
+  <button onclick="cuteMsg1()">Miss You 💖</button>
+  <button onclick="cuteMsg2()">Love You ❤️</button>
+  <button onclick="cuteMsg3()">Please Talk 🥺</button>
+  <button onclick="hug()">Send Hug 🤗</button>
+
+  <!-- Output -->
+  <div id="messages"></div>
 
   <script>
-    function showMessage() {
-      document.getElementById("extraMessage").innerHTML =
-        "Main tumhe bahut miss kar rahi hoon… please baat kar lo na 🥺💖";
+    function saySorry() {
+      let text = "";
+      for (let i = 1; i <= 100; i++) {
+        text += i + ". Sorry 😔\n";
+      }
+      document.getElementById("messages").innerText = text;
+    }
+
+    function cuteMsg1() {
+      document.getElementById("messages").innerHTML =
+        "Main tumhe bahut miss kar rahi hoon… 🥺💖<br>Plz baat kar lo na 😭";
+    }
+
+    function cuteMsg2() {
+      document.getElementById("messages").innerHTML =
+        "I really really love you ❤️<br>Tum bina sab adhura lagta hai 😔";
+    }
+
+    function cuteMsg3() {
+      document.getElementById("messages").innerHTML =
+        "Gussa chhodo na 😭<br>Main pakka dobara aisi galti nahi karungi 💞";
+    }
+
+    function hug() {
+      document.getElementById("messages").innerHTML =
+        "<p>Yeh lo ek tight hug 🤗💖</p>" +
+        "<img src='https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif'>";
     }
   </script>
 
